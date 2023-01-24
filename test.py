@@ -27,7 +27,6 @@ def crawl():
         #driver.find_element(By.XPATH,'//*[@id="layout_config_full"]/div[1]/div[2]/div[2]').click()
         sleep(1)
         #로그인
-
         driver.find_element(By.XPATH,'//*[@id="tnb_inner"]/ul/li[1]/a').click()
         sleep(1)
         driver.find_element(By.XPATH,'//*[@id="login_id"]').send_keys('아이디')
@@ -51,7 +50,7 @@ def crawl():
             element = driver.find_element(By.XPATH,'//*[@id="container"]/div[4]/div[2]/ul')
             li = element.find_elements(By.XPATH,'//*[@id="container"]/div[4]/div[2]/ul/li')
             
-
+            #리스트 출력
             for i in li :
                 #사진 = i.find_element(By.XPATH,'//*[@id="container"]/div[4]/div[2]/ul/li/a/dl/dt/img').text
                 제품코드 = i.find_element(By.CSS_SELECTOR,'.tal.mart10').text
