@@ -30,8 +30,8 @@ def crawl():
 
         driver.find_element(By.XPATH,'//*[@id="tnb_inner"]/ul/li[1]/a').click()
         sleep(1)
-        driver.find_element(By.XPATH,'//*[@id="login_id"]').send_keys('cray5404')
-        driver.find_element(By.XPATH,'//*[@id="login_pw"]').send_keys('rladudgus12#')
+        driver.find_element(By.XPATH,'//*[@id="login_id"]').send_keys('아이디')
+        driver.find_element(By.XPATH,'//*[@id="login_pw"]').send_keys('비밀번호')
         driver.find_element(By.XPATH,'//*[@id="login_fld"]/dl/dd[4]/button').click()
         sleep(1)
         #추천물건
